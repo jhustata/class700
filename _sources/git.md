@@ -12,7 +12,7 @@ The project you are going to collaborate on is inspired by a problem that arose 
 
 1. imported .SAS files from the CDC website (.do file equivalents)
 2. translate their content into Stata syntax and export the products as .do files
-3. queue the .do files to construct the NHANES III survery with over 3700 variables from questionnaire, exam, lab
+3. queue the .do files to construct the NHANES III survey with over 3700 variables from questionnaire, exam, lab
 4. perform a mortality-linkage of these survey participants over a 30-year period from as early as 1988 through 2018.
 5. set up the user for survival analysis using non-parametric (Kaplan-Meier), semi-parametric (Cox regression), and parametric (Weibull) approaches. And show-case the versatility of macros and Stata programs.
 
