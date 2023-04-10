@@ -1,11 +1,14 @@
-# Welcome to your Jupyter Book
+# agon
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+Python has got [jupyter-book](https://www.youtube.com/watch?v=lZ2FHTkyaMU ), R as got [bookdown](https://www.youtube.com/watch?v=9i0ElncHGRg), and Stata has got what exactly?
 
-Check out the content pages bundled with this sample book to see more.
+Stata admitted to Jason at last years' annual conference held in D.C. that they did not have collaborative tools yet for full reproducibility in the way Jupyter notebooks and R markdown/Quarto documents work.
+
+Indeed, we created this class resource for you using Jupyter book. That is why you have to copy Stata code from the book into a .do file to get results. As an advanced class, we are going to spend the next 5 weeks pushing the limits of Stata. We'll at the very least perform analyses and publish the results directly from Stata into an .html abstract, which we'll embarassingly have to house on a Jupyter-book platform.
+
+You will be the inaugural class in an annual process of pushing Stata to its limits, in an open competition with its most worthy adversaries: Python and R. Each year will have access to your joint project, since it will be published in this book. There's will be a challenge to `stand on the shoulders` of the giants that preceeded them, never to reinvent the wheel, but to take it to the next level each year!
+
+Table of Contents
 
 ```{tableofcontents}
 ```
