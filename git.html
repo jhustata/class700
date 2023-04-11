@@ -358,27 +358,27 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="git">
 <h1>git<a class="headerlink" href="#git" title="Permalink to this heading">#</a></h1>
-<p>It’s a Stata class but the world has moved on from pure statistical computing to a more involved process beginning with the conception of a project, its successful management, and ultimately publication!</p>
-<p>Stata has not made the full transition as have other more nimble open-source platforms such as Python and R. As such Stata is an outstanding, user-friendly, and commercially-available platform for statistical computing. In this advanced class we’ll push you to appreciate these virtues.</p>
-<p>However, we also wish to make it clear to you that the needs of a graduate, academic, and industry expert beyond 2020 are very dynamic, emerging, and heavily based on an online self-publishing platform such as this class book!</p>
+<p>It’s a Stata class but the world has moved on from pure statistical computing (what Stata represents) to a more <code class="docutils literal notranslate"><span class="pre">involved</span> <span class="pre">process</span></code> beginning with the conception of a project, its successful management, and ultimately publication!</p>
+<p>More nimble open-source platforms such as Python and R are leading this transition. Stata remains an outstanding, user-friendly, and commercially-available platform for statistical computing, which this class will prepare you to leverage.</p>
+<p>However, we also wish to make it clear to you that the needs of a graduate, academic, and industry expert are now very dynamic, emerging, and heavily based on online self-publishing platforms such as this jupyter-book!</p>
 <p>Your goal over the next 5 weeks is to collaborate as one team on a single project, with technical aspects to it as well as self-publishing demands. We will guide you on how to set yourselves up for online publishing using Python- and R-based platforms. But by week 6 you’ll be able to replace much of your webcontent with .html material directly outputted by Stata!</p>
 <p>The project you are going to collaborate on is inspired by a problem that arose in the 340.600 class in the second week. Your instructor shared a .dofile script that was meant to perform the following tasks:</p>
 <ol class="arabic simple">
-<li><p>imported .SAS files from the CDC website (.do file equivalents)</p></li>
+<li><p>import <a class="reference external" href="https://wwwn.cdc.gov/nchs/data/nhanes3/1a/adult.sas">.SAS files</a> from the CDC website (.do file equivalents)</p></li>
 <li><p>translate their content into Stata syntax and export the products as .do files</p></li>
-<li><p>queue the .do files to construct the NHANES III survey with over 3700 variables from questionnaire, exam, lab</p></li>
-<li><p>perform a mortality-linkage of these survey participants over a 30-year period from as early as 1988 through 2018.</p></li>
+<li><p>queue the .do files to construct the NHANES III survey with 3643 variables from questionnaire, exam, and lab</p></li>
+<li><p>perform a mortality-linkage of these survey participants over a 30-year period from 1988 thru 2018.</p></li>
 <li><p>set up the user for survival analysis using non-parametric (Kaplan-Meier), semi-parametric (Cox regression), and parametric (Weibull) approaches. And show-case the versatility of macros and Stata programs.</p></li>
 </ol>
-<p>As it turns out, the vast majority of students have Stata/BE or IC, which cannot handle more than 2400 variables. But I’ve addressed this issue: <a class="reference external" href="https://jhustata.github.io/book/fff.html">https://jhustata.github.io/book/fff.html</a></p>
-<p>When a user enters the following commands in succession:</p>
+<p>As it turns out, the vast majority of students have Stata/BE or IC, which cannot handle more than 2048 variables. But I’ve addressed this issue using an updated Stata program: <a class="reference external" href="https://jhustata.github.io/book/fff.html">https://jhustata.github.io/book/fff.html</a></p>
+<p>When a user enters the following commands (copy &amp; paste into a .do file and do!):</p>
 <div class="highlight-Stata notranslate"><div class="highlight"><pre><span></span><span class="k">do</span> https:<span class="o">//</span>raw<span class="m">.</span>githubusercontent<span class="m">.</span>com<span class="o">/</span>jhustata<span class="o">/</span>book<span class="o">/</span>main<span class="o">/</span>nhanes<span class="o">-</span>alpha<span class="m">.</span>ado
 
 nhanes
 </pre></div>
 </div>
-<p>The program automatically curates an NHANES III dataset with only the 27 variables they need for the specific class content if they are running Stata/BE or IC. Or it will curate the full NHANES III dataset with 3700+ variables if they are running Stata/SE or MP.</p>
-<p>Your challange as one team is to make this program flexible enough to meet all sort of user-based-needs. Thus far the program only meets the needs for a specific Stata class session.</p>
+<p>The program automatically curates an NHANES III dataset with only the 27 variables they need for the specific class content if they are running Stata/BE or IC. Or it will curate the full NHANES III dataset with 3643 variables if they are running Stata/SE or MP.</p>
+<p>Your challange as one team is to make this program <code class="docutils literal notranslate"><span class="pre">flexible</span> <span class="pre">enough</span></code> to meet all sort of user-based-needs. Thus far the program only meets the needs for a specific Stata class session.</p>
 <p>Not to worry, you are going to learn more about programming in each passing week. And with such a clear task at hand, you’ll be alert to every new idea presented in class.</p>
 </section>
 
