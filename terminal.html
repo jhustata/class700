@@ -362,6 +362,24 @@ document.write(`
 <p>You will not be able to use a mouse for most of these tasks. And so if you are not familiar with <code class="docutils literal notranslate"><span class="pre">command-prompts</span></code>, this is your lucky opportunity to finally confront your fears. Its really straight-forward stuff since we will provide you with much guidance. But remember that there are lots of guides out there on youtube and even ChatGPT.</p>
 <p>Please use the discussion forum to communicate amongs each other and with your teaching team including Jason and I, but also including Vincent and Johnathan from the 340.600 class. You may use platforms beyond these for the efficiency of your team, including Microsoft teams, Slack, etc.</p>
 <p>My personal choice for a Terminal is <a class="reference external" href="https://code.visualstudio.com/download">VS Code</a>. Jason’s is <a class="reference external" href="https://posit.co">RStudio</a>. One may successfully use the Macs in-built Terminal (I designed this book using it) but you’ll miss out on fancy extension-packages by 3rd parties (which you may add at a later time).</p>
+<p>Feel free to watch the vides we’ve shared. But if you’re impatient, just follow these steps and your book will be live in less than 5 minutes. You may then edit its contents:</p>
+<ol class="arabic simple">
+<li><p><strong>github</strong> -&gt; create a new public repo</p></li>
+<li><p><strong>terminal</strong>:</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>   $ jupyter-book create gitname
+   $ git clone https://github.com/book
+   $ cp -r gitname/* book
+   $ cd book
+   $ git add ./*
+   $ git commit -m &quot;whatever update to your repo&quot;
+   $ git push
+   $ ghp-import -n -p -f _built/html
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p><strong>github</strong> -&gt; repo -&gt; github-pages -&gt; view deployment</p></li>
+</ol>
 </section>
 
     <script type="text/x-thebe-config">
