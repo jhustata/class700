@@ -1,6 +1,6 @@
 # agon
 
-Python has got [jupyter-book](https://www.youtube.com/watch?v=lZ2FHTkyaMU ), R as got [bookdown](https://www.youtube.com/watch?v=9i0ElncHGRg), and Stata has got... what exactly?
+Python has got [jupyter-book](https://jupyterbook.org/en/stable/intro.html), R as got [bookdown](https://www.youtube.com/watch?v=9i0ElncHGRg), and Stata has got... what exactly?
 
 Stata admitted to Jason, your outstanding TA, at last years' annual conference held in D.C. that they did not **yet** have the full suit of collaborative tools for reproducibility as seen with Jupyter notebooks for Python and RStudio/Quarto for R.
 
