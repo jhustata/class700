@@ -46,7 +46,7 @@ di "obs: `c(N)' & vars: `c(k)'"
 
 #### Acknowledgments 
 
-We initially published our Stata output in a Jupiter-book hosted by Github. All the .html content of the book was produced in a Python environment; however, [Stata .html output](file:///Users/d/Dropbox%20(Personal)/7a.τάξη,α/4.aesthetic/epi340/nhanes.html) will gradually replace the Python-based output of the book as we truly become advanced Stata users!
+We initially published our Stata output in a Jupiter-book hosted by Github. All the .html content of the book was produced in a Python environment; however, [Stata .html output](nhanes.html) will gradually replace the Python-based output of the book as we truly become advanced Stata users!
 
 VS Code terminal is our IDE choice for committing and pushing our git content to our hub and have established a seamless process for updating our publication.
 
