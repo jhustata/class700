@@ -36,7 +36,7 @@ nhanes
 
 #### Conclusions 
 
-Now that we have established our workflow, updates to our program will be published on a weekly basis and the URL will be sent to the student team as well as the teaching team in the first five minutes of each class session. A question not to ask: shall we ever need to annotate our .do files if we can offer much richer documentation in e-book built using .html?
+Now that we have established our workflow, updates to our program will be published on a weekly basis and the URL will be sent to the student team as well as the teaching team in the first five minutes of each class session. A question not to ask: shall we ever need to annotate our .do files if we can offer much richer documentation in e-books built using .html?
 
 
 ```
@@ -46,7 +46,7 @@ di "obs: `c(N)' & vars: `c(k)'"
 
 #### Acknowledgments 
 
-We initially published our Stata output in a Jupiter-book hosted by Github. All the .html content of the book was produced in a Python environment; however, Stata .html output will gradually replace the Python-based output of the book as we truly become advanced Stata users!
+We initially published our Stata output in a Jupiter-book hosted by Github. All the .html content of the book was produced in a Python environment; however, [Stata .html output](file:///Users/d/Dropbox%20(Personal)/7a.τάξη,α/4.aesthetic/epi340/nhanes.html) will gradually replace the Python-based output of the book as we truly become advanced Stata users!
 
 VS Code terminal is our IDE choice for committing and pushing our git content to our hub and have established a seamless process for updating our publication.
 
