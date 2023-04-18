@@ -46,11 +46,11 @@ di "obs: `c(N)' & vars: `c(k)'"
 
 #### Acknowledgments 
 
-We initially published our Stata output in a Jupiter-book hosted by Github. All the .html content of the book was produced in a Python environment; however, [Stata .html output](nhanes.html) will gradually replace the Python-based output of the book as we truly become advanced Stata users!
+We initially published our Stata output in a Jupiter-book hosted by Github. All the .html content of the book was produced in a Python environment; however, [Stata .html output](https://www.dropbox.com/s/5g30bmsddqkmu72/nhanes.html?dl=0) will gradually replace the Python-based output of the book as we truly become advanced Stata users!
 
 VS Code terminal is our IDE choice for committing and pushing our git content to our hub and have established a seamless process for updating our publication.
 
-**References:**
+#### References
 
 1. https://jhustata.github.io/book/jjj.html
 2. https://jupyterbook.org/en/stable/start/your-first-book.html
