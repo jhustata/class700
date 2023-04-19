@@ -59,3 +59,6 @@ VS Code terminal is our IDE choice for committing and pushing our git content to
 5. https://jhustata.github.io/class700/intro.html
 6. https://www.jhsph.edu/courses/course/37447/2022/340.700.71/advanced-stata-programming
 7. [Muzaale AD. Databases for surgical health services research: National Health and Nutrition Examination Survey. Surgery. 2019 May;165(5):873-875](https://www.surgjournal.com/article/S0039-6060(18)30076-X/fulltext)
+8. https://www.ssc.wisc.edu/~hemken/Stataworkshops/dyndoc%20review/Review.html
+9. https://towardsdatascience.com/write-markdown-latex-in-the-jupyter-notebook-10985edb91fd
+
