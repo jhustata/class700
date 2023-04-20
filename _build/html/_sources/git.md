@@ -4,7 +4,7 @@ It's a Stata class but the world has moved on from pure statistical computing (w
 
 More nimble open-source platforms such as Python and R are leading this transition. Stata remains an outstanding, user-friendly, and commercially-available platform for statistical computing, which this class will prepare you to leverage.
 
-However, we also wish to make it clear to you that the needs of a graduate, academic, and industry expert are now very dynamic, emerging, and heavily based on online self-publishing platforms such as this jupyter-book!
+However, we also wish to make it clear to you that the needs of a graduate, academic, and industry expert are now very `dynamic` (think: `dyndoc`), emerging, and heavily based on online self-publishing (think: github-pages) platforms such as this jupyter-book!
 
 Your goal over the next 5 weeks is to collaborate as one team on a single project, with technical aspects to it as well as self-publishing demands. We will guide you on how to set yourselves up for online publishing using Python- and R-based platforms. But by week 6 you'll be able to replace much of your webcontent with .html material directly outputted by Stata!
 
