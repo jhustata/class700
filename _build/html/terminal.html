@@ -455,6 +455,26 @@ document.write(`
 <li><p>Reproducibility</p></li>
 </ol>
 <p>With more prying eyes – not just journal editors and reviewers – looking at our process, our code, our analytic decisions, our justifications, our entire workflow, we are less prone to sloppiness, fraud, and that sort of science that everyone else <a class="reference external" href="https://journals.asm.org/doi/pdf/10.1128/mBio.01539-17">fails to reproduce</a>.</p>
+<p><strong>Summary</strong></p>
+<ul class="simple">
+<li><p>Structure</p>
+<ul>
+<li><p>dofile -&gt; Stata: ph.340.600</p></li>
+<li><p>dyndoc -&gt; html: ph.340.700 wk4</p></li>
+<li><p>html -&gt; push: ph.340.700 wk5</p></li>
+<li><p>jupyter -&gt; ghp: iterations wk6 - wk7</p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://jhustata.github.io/book/lab4.html">Content</a></p>
+<ul>
+<li><p>nhanes</p></li>
+<li><p>nhanes <code class="docutils literal notranslate"><span class="pre">varlist</span></code></p></li>
+<li><p>nhanes <code class="docutils literal notranslate"><span class="pre">varlist</span></code> <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">inrange(year,1988,2018)</span></code></p></li>
+<li><p>nhanes <code class="docutils literal notranslate"><span class="pre">varlist</span></code> <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">inrange(year,1988,2018)</span></code></p></li>
+<li><p>nhanes [<code class="docutils literal notranslate"><span class="pre">varlist</span></code>] [<code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">inrange(year,1988,2018)</span></code>],[file(<code class="docutils literal notranslate"><span class="pre">varlist</span></code>)] [<code class="docutils literal notranslate"><span class="pre">sample(byte)</span></code>]</p></li>
+</ul>
+</li>
+</ul>
 </section>
 
     <script type="text/x-thebe-config">
