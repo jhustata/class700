@@ -334,7 +334,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -350,6 +352,15 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bookdown">bookdown</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#live">live</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -475,6 +486,42 @@ document.write(`
 </ul>
 </li>
 </ul>
+<section id="bookdown">
+<h2>bookdown<a class="headerlink" href="#bookdown" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>install r, rstudio, latest versions</p></li>
+<li><p>think about workdir location (e.g. ~/documents)</p></li>
+<li><p>workdir name (e.g. ~/documents/open/)</p></li>
+<li><p>repo name (e.g. username/science )</p></li>
+<li><p>ultimately repo -&gt; (~/documents/science)</p></li>
+<li><p>already have a public <a class="reference external" href="https://username.github.io/">https://username.github.io/</a> ??</p></li>
+<li><p>if not, create one; if so, move on to next step</p></li>
+<li><p>create new public repo (e.g. science)</p></li>
+<li><p>quarto rstudio download</p></li>
+<li><p>bookdown/sourcecode/inst/examples/install.bookdown</p></li>
+<li><p>file &gt; new project &gt; new directory (e.g. ~/documents/) &gt; quarto book &gt; build &gt; render &gt; html</p></li>
+<li><p>restart mac if any of above steps is not visible</p></li>
+<li><p>next steps are all from rstudio terminal</p></li>
+</ol>
+<div class="highlight-unix notranslate"><div class="highlight"><pre><span></span>git clone username/science
+cp -r open/* science
+cd science
+git config user.name
+git config user.email
+git remote set-url origin username/science
+create public/private KEYS
+git add ./*
+git commit -m “my first commit”
+git push origin gh-pages
+pip-install ghp-import
+ghp-import -n -p -f _book
+</pre></div>
+</div>
+</section>
+<section id="live">
+<h2>live<a class="headerlink" href="#live" title="Permalink to this heading">#</a></h2>
+<p><a class="reference external" href="https://xinranjhu.github.io/class700/">https://xinranjhu.github.io/class700/</a></p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -535,6 +582,21 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bookdown">bookdown</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#live">live</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
