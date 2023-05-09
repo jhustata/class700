@@ -61,6 +61,8 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'process';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -161,6 +163,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li class="toctree-l1"><a class="reference internal" href="terminal.html">terminal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hub.html">hub</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">process</a></li>
+
 <li class="toctree-l1"><a class="reference internal" href="nhanes-hack.html">capstone</a></li>
 </ul>
 
@@ -332,7 +335,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -348,6 +353,27 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">process</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open">Open</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex">LaTeX</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown">Markdown</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#header">Header</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-header">Sub header</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-sub-header">Sub-sub header</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -359,7 +385,7 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="process">
 <h1>process<a class="headerlink" href="#process" title="Permalink to this heading">#</a></h1>
-<p><a class="reference external" href="https://jhjhm.zoom.us/rec/play/b4ikb1wvztFtnF91Bk6MqGyTh47IjshuMmfhqkKCJthpDnG8X5GuBocPoxVZ2zZpomn0hcmJVOoGz57_.g2JBGf47EDuvCtYG?canPlayFromShare=true&amp;from=my_recording&amp;continueMode=true&amp;componentName=rec-play&amp;originRequestUrl=https%3A%2F%2Fjhjhm.zoom.us%2Frec%2Fshare%2FwQFdA9HfocN5RMJek5hpLG4sgbAV3uf2cQCG6zf1TtUvHtS7FTDsJyrxWQ0899Bu.-f2SVivW9gZBLA_t">wk1</a>: <code class="docutils literal notranslate"><span class="pre">twoway</span></code></p>
+<p><a class="reference external" href="https://jhjhm.zoom.us/rec/share/WwByoEDR0udPT3D13EwjmK0nE7aAqrypvmb0v6s3i2NvVaJEeoqSPymDSpi8psIQ.iHnnOSZqvXUoSNyo?startTime=1680255301000">wk1</a>: <code class="docutils literal notranslate"><span class="pre">twoway</span></code></p>
 <ol class="arabic simple">
 <li><p>Instructor: Abimereki Muzaale <a class="reference external" href="mailto:muzaale&#37;&#52;&#48;jhmi&#46;edu">muzaale<span>&#64;</span>jhmi<span>&#46;</span>edu</a></p></li>
 <li><p>TA: Jason Haw <a class="reference external" href="mailto:nhaw1&#37;&#52;&#48;jhu&#46;edu">nhaw1<span>&#64;</span>jhu<span>&#46;</span>edu</a></p></li>
@@ -367,13 +393,13 @@ document.write(`
 <li><p>Mortality: Task1 <a class="reference external" href="https://jhustata.github.io/book/jjj.html">https://jhustata.github.io/book/jjj.html</a></p></li>
 <li><p>Runtime: Quantifying it &amp; optimizing code in light of memory <a class="reference external" href="https://ftp.cdc.gov/pub/">cdc.gov</a>, <a class="reference external" href="https://data.nber.org/mortality/">nber.org</a>, <a class="reference external" href="https://jhustata.github.io/book/_downloads/9359d2ae4f8ad2efcfe2fd34e3547c35/mortality.png">twoway</a></p></li>
 </ol>
-<p><a class="reference external" href="https://jhjhm.zoom.us/rec/play/Z6XxwctVdO_7G4Au9Fu037cGyjXTto5N71ojOYjKxWwfJBiPt89TJoFHiFKKItUpuxEM0BSvEhA8s58D.hwhzFreQ2tFKqL36?canPlayFromShare=true&amp;from=my_recording&amp;startTime=1680639414000&amp;componentName=rec-play&amp;originRequestUrl=https%3A%2F%2Fjhjhm.zoom.us%2Frec%2Fshare%2FVVsgzwzUkaYQJHR4R5_bp0kf8GvoBszDD3bMax0kuSC_PeGUaeLX1ZwcV7Rhwa41.PjOE99QxZeyqB84a%3FstartTime%3D1680639414000">wk2</a>: <code class="docutils literal notranslate"><span class="pre">timer</span></code></p>
+<p><a class="reference external" href="https://jhjhm.zoom.us/rec/share/8qAZMATA3mWr6IyKGzGJhmPG-sFy3rMldTiiGV-EYWtbFZOvhAsN7UDYBtzWV6gt.-pbuwU0i-e3gQyfu?startTime=1680639414000">wk2</a>: <code class="docutils literal notranslate"><span class="pre">timer</span></code></p>
 <ol class="arabic simple">
 <li><p>Discussion of Task1</p></li>
 <li><p>You’ll offer <code class="docutils literal notranslate"><span class="pre">mortality</span></code> as a <strong>surprise</strong> bonus to users of <code class="docutils literal notranslate"><span class="pre">nhanes</span></code></p></li>
 <li><p>Think of how to incorporate it into your final <code class="docutils literal notranslate"><span class="pre">nhanes</span></code> program</p></li>
 </ol>
-<p><a class="reference external" href="https://jhjhm.zoom.us/rec/share/c6zqCBZPu7KVvHwFy12IKSv3RLfeiLvAf_Ihetu6JXvrotldmXz58QqXk740DoTJ.0uAuBvr_zkEIUtkN?startTime=1681243501000">wk3</a>: <code class="docutils literal notranslate"><span class="pre">nhanes</span></code></p>
+<p><a class="reference external" href="https://jhjhm.zoom.us/rec/share/bjcMGMMd8vTu3_Z_RcjY0akLNOP-v-jh4g8wenNleOBXcmNxPbIL2shH5nsEBArG.A7IjG8iopKjIeteW?startTime=1681243501000">wk3</a>: <code class="docutils literal notranslate"><span class="pre">nhanes</span></code></p>
 <ol class="arabic simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">program</span> <span class="pre">define</span> <span class="pre">nhanes</span></code></p></li>
 <li><p>A flexible program</p></li>
@@ -381,16 +407,21 @@ document.write(`
 <li><p>I’ve gifted v041023 of this project</p></li>
 <li><p>You’ll share updates each week culminating in an .html abstract!</p></li>
 </ol>
-<p><a class="reference external" href="https://jhjhm.zoom.us/rec/share/feS9fNFn0j_aKv03rA-RGl5l1AG2GX3oabvnlRBkNGi7F7psKzwmKv2G0jgTsKEl.UTzqCDa6wttDfAUZ?startTime=1681848284000">wk4</a>: <code class="docutils literal notranslate"><span class="pre">dyndoc</span></code></p>
+<p><a class="reference external" href="https://jhjhm.zoom.us/rec/share/KeiDyKPxqDpeprsZgoFBW7NG86nderP6McEqbdpHzBjshE3nflqq3VbY6KMrqHM6.SSMZit4LGkhQdQdr?startTime=1681848284000">wk4</a>: <code class="docutils literal notranslate"><span class="pre">dyndoc</span></code></p>
 <ol class="arabic simple">
 <li><p>current nhanes.ado addresses needs for 340.600 class week II</p></li>
 <li><p>upgrade it to respond to a list of variables selected by the user</p></li>
 <li><p>publish this update as a v041723 release in your online book</p></li>
 </ol>
-<p><a class="reference external" href="https://jhjhm.zoom.us/rec/share/SbSW1BvHOY0nbkCFZRDHPTEVOEXqUiISw9lOwlTzGYvM-RkO5b2m_3lllMSdUBWL.feJOOjNcLAFsWaI2?startTime=1682453512000">wk5</a>: <code class="docutils literal notranslate"><span class="pre">syntax</span> <span class="pre">varlist</span></code></p>
-<p>wk6: <code class="docutils literal notranslate"><span class="pre">,[dataset(string)]</span> <span class="pre">[sample(int)]</span></code></p>
-<p>wk7: <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">inrange(year,1988,2018)</span></code></p>
-<p>wk8: <code class="docutils literal notranslate"><span class="pre">help</span> <span class="pre">nhanes</span></code></p>
+<p><a class="reference external" href="https://jhjhm.zoom.us/rec/share/xsCVsM1QsnOO23LDUn-EVboeadmKRGNwFN1auegDreoi_zQr47huQdwN101_ciY2.NfT5wUdboDZDf-k6?startTime=1682453512000">wk5</a>: <code class="docutils literal notranslate"><span class="pre">syntax</span> <span class="pre">varlist</span></code></p>
+<p><a class="reference external" href="https://jhjhm.zoom.us/rec/share/9TtARlj3f-auSe1xV-ia3eGrbawwN67Ydmu-TjQs4P6MKCS7GucDsVKXsYODhcmU.8fAneH_K_JwPFrgM?startTime=1683057712000">wk6</a>: <code class="docutils literal notranslate"><span class="pre">,[dataset(string)]</span> <span class="pre">[sample(int)]</span></code></p>
+<p><a class="reference external" href="https://jhjhm.zoom.us/rec/share/UkwS8ZPFBeZqthcBPYWSzTD4Eoz0hVpXzvcHbMXw5eEdrlpUgvXqkLDvgATW6bi4.FNwnFYCUw8pITCr-?startTime=1683664305000">wk7</a>: <code class="docutils literal notranslate"><span class="pre">if</span> <span class="pre">inrange(year,1988,2018)</span></code></p>
+<ol class="arabic simple">
+<li><p>almost everyone has pushed some content from a jupyter or quarto book onto gh-pages</p></li>
+<li><p>now please spend your final two weeks refinning your nhanes program</p></li>
+<li><p>then spend some time writing a beautiful abstract to pitch your new Stata command to an audience of advanced programmers at Stanford, CA this June where the annual Stata conference will be hosted
+wk8: <code class="docutils literal notranslate"><span class="pre">help</span> <span class="pre">nhanes</span></code></p></li>
+</ol>
 <p>checklist:</p>
 <ol class="arabic simple">
 <li><p>advanced Stata syntax</p></li>
@@ -399,6 +430,41 @@ document.write(`
 <li><p>faster runtime, minimal memory</p></li>
 <li><p><a class="reference external" href="https://towardsdatascience.com/write-markdown-latex-in-the-jupyter-notebook-10985edb91fd">markdown, html, LaTeX</a></p></li>
 </ol>
+<section id="open">
+<h2>Open<a class="headerlink" href="#open" title="Permalink to this heading">#</a></h2>
+<p>The advanced class has focused on the <strong>process</strong> and workflow leading to open science whereas the basic class has been completely dedicated to creating output and content.</p>
+<p>Once all output is created and then pushed onto gh-pages, issues of aesthetics will innevitably arise. And markdown, LaTeX, CSS, etc. are very simple languages/tools that help in this regard.</p>
+<p>You may read about them on wikipedia. In this class only an introduction to them should set you up for life!</p>
+</section>
+<section id="latex">
+<h2>LaTeX<a class="headerlink" href="#latex" title="Permalink to this heading">#</a></h2>
+<p><span class="math notranslate nohighlight">\(Y\)</span> = <span class="math notranslate nohighlight">\(\beta_0\ +\ \beta_1X_1\ +\ \beta_2X_2\ +\ ...\ +\ \beta_nX_n\  + \varepsilon_{iid\ \sim\ N(\mu, \sigma)}\)</span></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$Y$ = $\beta_0\ +\ \beta_1X_1\ +\ \beta_2X_2\ +\ ...\ +\ \beta_nX_n\  + \varepsilon_{iid\ \sim\ N(\mu, \sigma)}$
+
+</pre></div>
+</div>
+</section>
+<section id="markdown">
+<h2>Markdown<a class="headerlink" href="#markdown" title="Permalink to this heading">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="header">
+<h1>Header<a class="headerlink" href="#header" title="Permalink to this heading">#</a></h1>
+<section id="sub-header">
+<h2>Sub header<a class="headerlink" href="#sub-header" title="Permalink to this heading">#</a></h2>
+<section id="sub-sub-header">
+<h3>Sub-sub header<a class="headerlink" href="#sub-sub-header" title="Permalink to this heading">#</a></h3>
+<p><em>italics</em>
+<strong>bold</strong>
+<u>underline</u>
+<strike>strike</strike></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>![](filename.png)
+[highlighted text here](url)
+</pre></div>
+</div>
+<p>Learn some <a class="reference external" href="https://www.markdownguide.org/getting-started/">basic</a> markdown</p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -459,6 +525,33 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">process</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#open">Open</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latex">LaTeX</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#markdown">Markdown</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#header">Header</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-header">Sub header</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-sub-header">Sub-sub header</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>
