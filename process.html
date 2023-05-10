@@ -419,8 +419,24 @@ document.write(`
 <ol class="arabic simple">
 <li><p>almost everyone has pushed some content from a jupyter or quarto book onto gh-pages</p></li>
 <li><p>now please spend your final two weeks refinning your nhanes program</p></li>
-<li><p>then spend some time writing a beautiful abstract to pitch your new Stata command to an audience of advanced programmers at Stanford, CA this June where the annual Stata conference will be hosted
-wk8: <code class="docutils literal notranslate"><span class="pre">help</span> <span class="pre">nhanes</span></code></p></li>
+<li><p>then spend some time writing a beautiful abstract to pitch your new Stata command to an audience of advanced programmers at Stanford, CA this June where the annual Stata conference will be hosted</p></li>
+</ol>
+<p>wk8: <code class="docutils literal notranslate"><span class="pre">help</span> <span class="pre">nhanes</span></code></p>
+<ol class="arabic simple">
+<li><p>Rich documentation of the process leading up to your flexible <code class="docutils literal notranslate"><span class="pre">nhanes</span></code> program</p></li>
+<li><p>Think of 600 and 700 class books as an approach to <code class="docutils literal notranslate"><span class="pre">open</span> <span class="pre">science</span></code>:</p>
+<ul class="simple">
+<li><p>my Stata code is open to the world</p></li>
+<li><p>you can copy it and reproduce my work and findings</p></li>
+<li><p>any sloppiness, fraud, or lack of reproducibility will be demonstrable</p></li>
+</ul>
+</li>
+<li><p>Produce two versions of abstracts:</p>
+<ul class="simple">
+<li><p>one using the jupyter-python environment but with products (.do files, figures) from Stata</p></li>
+<li><p>the other using Stata’s <code class="docutils literal notranslate"><span class="pre">dyndoc</span></code> command to produce .html, which you <strong>hack into</strong> the jupyter or quarto infrastructure</p></li>
+</ul>
+</li>
 </ol>
 <p>checklist:</p>
 <ol class="arabic simple">
@@ -450,19 +466,31 @@ wk8: <code class="docutils literal notranslate"><span class="pre">help</span> <s
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="header">
 <h1>Header<a class="headerlink" href="#header" title="Permalink to this heading">#</a></h1>
+<div class="highlight-stata notranslate"><div class="highlight"><pre><span></span># Header
+</pre></div>
+</div>
 <section id="sub-header">
 <h2>Sub header<a class="headerlink" href="#sub-header" title="Permalink to this heading">#</a></h2>
+<div class="highlight-stata notranslate"><div class="highlight"><pre><span></span>$$ Sub header
+</pre></div>
+</div>
 <section id="sub-sub-header">
 <h3>Sub-sub header<a class="headerlink" href="#sub-sub-header" title="Permalink to this heading">#</a></h3>
+<div class="highlight-stata notranslate"><div class="highlight"><pre><span></span>Sub<span class="o">-</span>sub header
+</pre></div>
+</div>
 <p><em>italics</em>
 <strong>bold</strong>
 <u>underline</u>
 <strike>strike</strike></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>![](filename.png)
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>![](displayed image filename.png)
 [highlighted text here](url)
 </pre></div>
 </div>
 <p>Learn some <a class="reference external" href="https://www.markdownguide.org/getting-started/">basic</a> markdown</p>
+<div class="highlight-stata notranslate"><div class="highlight"><pre><span></span>Learn some [basic](https:<span class="o">//</span>www<span class="m">.</span>markdownguide<span class="m">.</span>org<span class="o">/</span>getting<span class="o">-</span>started<span class="o">/</span>) markdown
+</pre></div>
+</div>
 </section>
 </section>
 </section>
