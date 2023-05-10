@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>agon &#8212; Advanced Stata Programming</title>
+    <title>capstone &#8212; Advanced Stata Programming</title>
   
   
   
@@ -61,10 +61,10 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapter5';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="git" href="chapter1.html" />
+    <link rel="prev" title="process" href="chapter4.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -130,7 +130,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -149,13 +149,13 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     agon
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="chapter1.html">git</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter2.html">terminal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter3.html">hub</a></li>
@@ -163,7 +163,7 @@ const thebe_selector_output = ".output, .cell_output"
 
 
 
-<li class="toctree-l1"><a class="reference internal" href="chapter5.html">capstone</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">capstone</a></li>
 </ul>
 
     </div>
@@ -235,7 +235,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fchapter5.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -265,7 +265,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/chapter5.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -334,7 +334,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
 </div></div>
       
     </div>
@@ -345,11 +347,30 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>agon</h1>
+    <h1>capstone</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#increasing-access-to-the-nhanes-1988-2018-surveys-mortality-linkage-data-via-a-user-friendly-stata-program">Increasing access to the NHANES 1988-2018 surveys &amp; mortality linkage data via a user-friendly Stata program</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#authors-degrees-institutional-affiliations">Authors, degrees, institutional affiliations</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#methods">Methods</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#results">Results</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusions">Conclusions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#acknowledgments">Acknowledgments</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -359,26 +380,64 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="agon">
-<h1>agon<a class="headerlink" href="#agon" title="Permalink to this heading">#</a></h1>
-<p>Class <a class="reference external" href="https://jhjhm.zoom.us/j/98823052701">zoom</a> link</p>
-<p>Python has got <a class="reference external" href="https://jupyterbook.org/en/stable/intro.html">Jupyter-book</a>, R as got <a class="reference external" href="https://www.youtube.com/watch?v=9i0ElncHGRg">Bookdown</a>, and Stata has got… what exactly?</p>
-<p>Stata admitted to Jason, your outstanding TA, at last years’ annual conference held in D.C. that they did not <strong>yet</strong> have the <a class="reference external" href="https://en.wikipedia.org/wiki/Software_suite">full suite</a> of collaborative tools for <code class="docutils literal notranslate"><span class="pre">reproducibility</span></code> as seen with Jupyter notebooks for Python and RStudio/Quarto for R.</p>
-<p>Indeed, we created this <a class="reference external" href="https://www.jhsph.edu/courses/course/37447/2022/340.700.71/advanced-stata-programming">class</a> resource for you using Jupyter-book. That is why you have to copy Stata code from the book into a .do file to get results instead of having them outputted within the document itself. As students committed to an advanced understanding of Stata, we cannot think of any better way of introducing you to advanced topics than by taking you to Stata’s limits. We will have you write a Stata program, show-case the development process, and publish the results directly from Stata into an .html abstract, which we may, embarassingly, have to house on this Jupyter-book platform!</p>
-<p>You will be the inaugural class in an annual process of pushing Stata to its limits, in an open competition with its most worthy adversaries: Python and R. Students in each successive year will have access to your projects webpage. Their goal will be to <code class="docutils literal notranslate"><span class="pre">stand</span> <span class="pre">on</span> <span class="pre">the</span> <span class="pre">shoulders</span></code> of the giants that preceeded them, never to reinvent the wheel, but to take it to the next level each year!</p>
-<p>Table of Contents</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="chapter1.html">git</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter2.html">terminal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter3.html">hub</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter4.html">process</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter4.html#header">Header</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter4.html#unix">Unix</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter4.html#options">Options</a></li>
-<li class="toctree-l1"><a class="reference internal" href="chapter5.html">capstone</a></li>
-</ul>
+  <section class="tex2jax_ignore mathjax_ignore" id="capstone">
+<h1>capstone<a class="headerlink" href="#capstone" title="Permalink to this heading">#</a></h1>
+<section id="increasing-access-to-the-nhanes-1988-2018-surveys-mortality-linkage-data-via-a-user-friendly-stata-program">
+<h2>Increasing access to the NHANES 1988-2018 surveys &amp; mortality linkage data via a user-friendly Stata program<a class="headerlink" href="#increasing-access-to-the-nhanes-1988-2018-surveys-mortality-linkage-data-via-a-user-friendly-stata-program" title="Permalink to this heading">#</a></h2>
+<section id="authors-degrees-institutional-affiliations">
+<h3>Authors, degrees, institutional affiliations<a class="headerlink" href="#authors-degrees-institutional-affiliations" title="Permalink to this heading">#</a></h3>
+<section id="background">
+<h4>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h4>
+<p>We are developing skills that allow us to access publicly available large databases that may be queried to answer fundamental questions about the publics health. These datasets might exist in formats unfamiliar to Stata users or in sizes that cripple ones workflow.</p>
+<p>In our first two weeks, we curated a dataset with all the <a class="reference external" href="https://data.nber.org/mortality/">mortality records</a> in the United States from 1959-2017 and wrote a basic Stata script that output a <a class="reference external" href="https://jhustata.github.io/book/_downloads/9359d2ae4f8ad2efcfe2fd34e3547c35/mortality.png">two-way plot</a> showing annual trends in number of deaths during this period. In the subsequent two weeks we wrote a Stata program, <code class="docutils literal notranslate"><span class="pre">mortality</span></code>, that allows the user to define the time-period of interest, plus other parameters such as cause-of-death, and ultimately produce a similar two-way plot with the convenience of a Stata command.</p>
+<p>Our goal for the second-half of the class is to leverage this experience to give Stata users access to the entire range of NHANES surveys via a simple command, <code class="docutils literal notranslate"><span class="pre">nhanes</span></code>, with several user-defined options. We have not yet articulated what these options are but will do so on an emerging basis each week.</p>
+<p>Today let’s start by reading in the alpha-version of this program, which we adopted from Chapter: <code class="docutils literal notranslate"><span class="pre">r(mean)</span></code> of the PH.340.600 book. Depending on your Stata edition, this program will either import a dataset with 20,000 observations and 3600 variables or 20,000 observations and 22 variables:</p>
+<div class="highlight-stata notranslate"><div class="highlight"><pre><span></span><span class="k">qui do</span> https:<span class="o">//</span>raw<span class="m">.</span>githubusercontent<span class="m">.</span>com<span class="o">/</span>jhustata<span class="o">/</span>book<span class="o">/</span>main<span class="o">/</span>nhanes<span class="o">-</span>alpha<span class="m">.</span>ado      
+</pre></div>
 </div>
+</section>
+<section id="methods">
+<h4>Methods<a class="headerlink" href="#methods" title="Permalink to this heading">#</a></h4>
+<p>For Stata/BE or IC users this current program outputs an NHANES dataset with 22 pre-specified variables. Over the next week we shall release the next iteration of the program, which will allow the user to list the variables they wish to be imported from the CDC website.</p>
+</section>
+<section id="results">
+<h4>Results<a class="headerlink" href="#results" title="Permalink to this heading">#</a></h4>
+<p>When a Kaplan-Meier graph pops up on your screen, that will be your cue that the program has run to completion and that you have an NHANES III dataset in your <code class="docutils literal notranslate"><span class="pre">pwd</span></code>.</p>
+<div class="highlight-stata notranslate"><div class="highlight"><pre><span></span><span class="k">set</span> scheme s2color
+nhanes
+</pre></div>
+</div>
+<p><img alt="" src="_images/nh3andmort.png" /></p>
+</section>
+<section id="conclusions">
+<h4>Conclusions<a class="headerlink" href="#conclusions" title="Permalink to this heading">#</a></h4>
+<p>Now that we have established our workflow, updates to our program will be published on a weekly basis and the URL will be sent to the student team as well as the teaching team in the first five minutes of each class session. A question not to ask: shall we ever need to annotate our .do files if we can offer much richer documentation in e-books built using .html?</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">use</span> <span class="n">nh3andmort</span><span class="p">,</span> <span class="n">clear</span>
+<span class="n">di</span> <span class="s2">&quot;obs: `c(N)&#39; &amp; vars: `c(k)&#39;&quot;</span>      
+</pre></div>
+</div>
+</section>
+<section id="acknowledgments">
+<h4>Acknowledgments<a class="headerlink" href="#acknowledgments" title="Permalink to this heading">#</a></h4>
+<p>We initially published our Stata output in a Jupiter-book hosted by Github. All the .html content of the book was produced in a Python environment; however, <span class="xref myst">Stata .html output</span> will gradually replace the Python-based output of the book as we truly become advanced Stata users!</p>
+<p>VS Code terminal is our IDE choice for committing and pushing our git content to our hub and have established a seamless process for updating our publication.</p>
+</section>
+<section id="references">
+<h4>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h4>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://jhustata.github.io/book/jjj.html">https://jhustata.github.io/book/jjj.html</a></p></li>
+<li><p><a class="reference external" href="https://jupyterbook.org/en/stable/start/your-first-book.html">https://jupyterbook.org/en/stable/start/your-first-book.html</a></p></li>
+<li><p><a class="reference external" href="https://www.stata.com/stata-news/news36-1/spotlight-markdown/">https://www.stata.com/stata-news/news36-1/spotlight-markdown/</a></p></li>
+<li><p><a class="reference external" href="https://wwwn.cdc.gov/nchs/data/nhanes3/1a/adult.sas">https://wwwn.cdc.gov/nchs/data/nhanes3/1a/adult.sas</a></p></li>
+<li><p><a class="reference external" href="https://jhustata.github.io/class700/intro.html">https://jhustata.github.io/class700/intro.html</a></p></li>
+<li><p><a class="reference external" href="https://www.jhsph.edu/courses/course/37447/2022/340.700.71/advanced-stata-programming">https://www.jhsph.edu/courses/course/37447/2022/340.700.71/advanced-stata-programming</a></p></li>
+<li><p><a class="reference external" href="https://www.surgjournal.com/article/S0039-6060(18)30076-X/fulltext">Muzaale AD. Databases for surgical health services research: National Health and Nutrition Examination Survey. Surgery. 2019 May;165(5):873-875</a></p></li>
+<li><p><a class="reference external" href="https://www.ssc.wisc.edu/~hemken/Stataworkshops/dyndoc%20review/Review.html">https://www.ssc.wisc.edu/~hemken/Stataworkshops/dyndoc review/Review.html</a></p></li>
+<li><p><a class="reference external" href="https://towardsdatascience.com/write-markdown-latex-in-the-jupyter-notebook-10985edb91fd">https://towardsdatascience.com/write-markdown-latex-in-the-jupyter-notebook-10985edb91fd</a></p></li>
+</ol>
+</section>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -412,14 +471,14 @@ document.write(`
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
-    <a class="right-next"
-       href="chapter1.html"
-       title="next page">
+    <a class="left-prev"
+       href="chapter4.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">git</p>
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">process</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div></div>
   
@@ -430,6 +489,31 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#increasing-access-to-the-nhanes-1988-2018-surveys-mortality-linkage-data-via-a-user-friendly-stata-program">Increasing access to the NHANES 1988-2018 surveys &amp; mortality linkage data via a user-friendly Stata program</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#authors-degrees-institutional-affiliations">Authors, degrees, institutional affiliations</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#background">Background</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#methods">Methods</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#results">Results</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#conclusions">Conclusions</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#acknowledgments">Acknowledgments</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
