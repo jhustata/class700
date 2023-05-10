@@ -465,6 +465,9 @@ document.write(`
 </section>
 <section id="markdown">
 <h2>Markdown<a class="headerlink" href="#markdown" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>some .html</p></li>
+</ul>
 </section>
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="header">
@@ -495,12 +498,31 @@ document.write(`
 <strong>bold</strong>
 <u>underline</u>
 <strike>strike</strike></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>![](displayed image filename.png)
-[highlighted text here](url)
+<div class="highlight-stata notranslate"><div class="highlight"><pre><span></span><span class="c1">*italics*</span>
+<span class="c1">**bold**</span>
+<span class="o">&lt;</span>u<span class="o">&gt;</span>underline<span class="o">&lt;/</span>u<span class="o">&gt;</span>
+<span class="o">&lt;</span>strike<span class="o">&gt;</span>strike<span class="o">&lt;/</span>strike<span class="o">&gt;</span>
 </pre></div>
 </div>
-<p>Learn some <a class="reference external" href="https://www.markdownguide.org/getting-started/">basic</a> markdown</p>
-<div class="highlight-stata notranslate"><div class="highlight"><pre><span></span>Learn some [basic](https:<span class="o">//</span>www<span class="m">.</span>markdownguide<span class="m">.</span>org<span class="o">/</span>getting<span class="o">-</span>started<span class="o">/</span>) markdown
+<p><em>italics</em></p>
+<p><strong>bold</strong></p>
+<p><u>underline</u></p>
+<p><strike>strike</strike></p>
+<div class="highlight-stata notranslate"><div class="highlight"><pre><span></span><span class="c1">*italics*</span>
+
+<span class="c1">**bold**</span>
+
+<span class="o">&lt;</span>u<span class="o">&gt;</span>underline<span class="o">&lt;/</span>u<span class="o">&gt;</span>
+
+<span class="o">&lt;</span>strike<span class="o">&gt;</span>strike<span class="o">&lt;/</span>strike<span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>![](displayed image filename.png)
+<span class="xref myst">highlighted text here</span></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Learn some [basic](https://www.markdownguide.org/getting-started/) markdown
+
+```stata
+Learn some [basic](https://www.markdownguide.org/getting-started/) markdown
 </pre></div>
 </div>
 <p>Lists (Numbered):</p>
