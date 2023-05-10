@@ -7,8 +7,9 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; Advanced Stata Programming</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>git &#8212; Advanced Stata Programming</title>
   
   
   
@@ -60,9 +61,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
-    <link rel="index" title="Index" href="#" />
+    <script>DOCUMENTATION_OPTIONS.pagename = 'chapter1';</script>
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="terminal" href="chapter2.html" />
+    <link rel="prev" title="agon" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -153,8 +156,8 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="chapter1.html">git</a></li>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">git</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter2.html">terminal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter3.html">hub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="chapter4.html">process</a></li>
@@ -233,7 +236,7 @@ const thebe_selector_output = ".output, .cell_output"
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fgenindex.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fchapter1.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -245,6 +248,54 @@ const thebe_selector_output = ".output, .cell_output"
   </span>
 <span class="btn__text-container">Open issue</span>
 </a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/chapter1.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
 </li>
       
   </ul>
@@ -295,7 +346,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1></h1>
+    <h1>git</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -309,13 +360,51 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
+  <section class="tex2jax_ignore mathjax_ignore" id="git">
+<h1>git<a class="headerlink" href="#git" title="Permalink to this heading">#</a></h1>
+<p>It’s a Stata class but the world has moved on from pure statistical computing (what Stata represents) to a more <code class="docutils literal notranslate"><span class="pre">involved</span> <span class="pre">process</span></code> beginning with the conception of a project, its successful management, and ultimately publication!</p>
+<p>More nimble open-source platforms such as Python and R are leading this transition. Stata remains an outstanding, user-friendly, and commercially-available platform for statistical computing, which this class will prepare you to leverage.</p>
+<p>However, we also wish to make it clear to you that the needs of a graduate, academic, and industry expert are now very <code class="docutils literal notranslate"><span class="pre">dynamic</span></code> (think: <code class="docutils literal notranslate"><span class="pre">dyndoc</span></code>), emerging, and heavily based on online self-publishing (think: github-pages) platforms such as this jupyter-book!</p>
+<p>Your goal over the next 5 weeks is to collaborate as one team on a single project, with technical aspects to it as well as self-publishing demands. We will guide you on how to set yourselves up for online publishing using Python- and R-based platforms. But by week 6 you’ll be able to replace much of your webcontent with .html material directly outputted by Stata!</p>
+<p>The project you are going to collaborate on is inspired by a problem that arose in the 340.600 class in the second week. Your instructor shared a .dofile script that was meant to perform the following tasks:</p>
+<ol class="arabic simple">
+<li><p>import <a class="reference external" href="https://wwwn.cdc.gov/nchs/data/nhanes3/1a/adult.sas">.SAS files</a> from the CDC website (.do file equivalents)</p></li>
+<li><p>translate their content into Stata syntax and export the products as .do files</p></li>
+<li><p>queue the .do files to construct the NHANES III survey with 3643 variables from questionnaire, exam, and lab</p></li>
+<li><p>perform a mortality-linkage of these survey participants over a 30-year period from 1988 thru 2018.</p></li>
+<li><p>set up the user for survival analysis using non-parametric (Kaplan-Meier), semi-parametric (Cox regression), and parametric (Weibull) approaches. And show-case the versatility of macros and Stata programs.</p></li>
+</ol>
+<p>As it turns out, the vast majority of students have Stata/BE or IC, which cannot handle more than 2048 variables. But I’ve addressed this issue using an updated Stata program: <a class="reference external" href="https://jhustata.github.io/book/fff.html">https://jhustata.github.io/book/fff.html</a></p>
+<p>When a user enters the following commands (copy &amp; paste into a .do file and do!):</p>
+<div class="highlight-Stata notranslate"><div class="highlight"><pre><span></span><span class="k">do</span> https:<span class="o">//</span>raw<span class="m">.</span>githubusercontent<span class="m">.</span>com<span class="o">/</span>jhustata<span class="o">/</span>book<span class="o">/</span>main<span class="o">/</span>nhanes<span class="o">-</span>alpha<span class="m">.</span>ado
 
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+nhanes
+</pre></div>
 </div>
+<p>The program automatically curates an NHANES III dataset with only the 27 variables they need for the specific class content if they are running Stata/BE or IC. Or it will curate the full NHANES III dataset with 3643 variables if they are running Stata/SE or MP.</p>
+<p>Your challange as one team is to make this program <code class="docutils literal notranslate"><span class="pre">flexible</span> <span class="pre">enough</span></code> to meet all sort of user-based-needs. Thus far the program only meets the needs for a specific Stata class session.</p>
+<p>Not to worry, you are going to learn more about programming in each passing week. And with such a clear task at hand, you’ll be alert to every new idea presented in class.</p>
+</section>
 
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -328,6 +417,24 @@ document.write(`
   
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="intro.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">agon</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="chapter2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">terminal</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div></div>
   
 </div>
