@@ -366,7 +366,10 @@ document.write(`
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#header">Header</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-header">Sub header</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-sub-header">Sub-sub header</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-sub-header">Sub-sub header</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-sub-sub-header">Sub-sub-sub header</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -476,7 +479,16 @@ document.write(`
 </div>
 <section id="sub-sub-header">
 <h3>Sub-sub header<a class="headerlink" href="#sub-sub-header" title="Permalink to this heading">#</a></h3>
-<div class="highlight-stata notranslate"><div class="highlight"><pre><span></span>Sub<span class="o">-</span>sub header
+<div class="highlight-stata notranslate"><div class="highlight"><pre><span></span>### Sub<span class="o">-</span>sub header
+</pre></div>
+</div>
+<section id="sub-sub-sub-header">
+<h4>Sub-sub-sub header<a class="headerlink" href="#sub-sub-sub-header" title="Permalink to this heading">#</a></h4>
+<div class="highlight-stata notranslate"><div class="highlight"><pre><span></span>#### Sub<span class="o">-</span>sub<span class="o">-</span>sub header
+</pre></div>
+</div>
+<p>Ordinary text</p>
+<div class="highlight-stata notranslate"><div class="highlight"><pre><span></span>Ordinary text
 </pre></div>
 </div>
 <p><em>italics</em>
@@ -491,6 +503,84 @@ document.write(`
 <div class="highlight-stata notranslate"><div class="highlight"><pre><span></span>Learn some [basic](https:<span class="o">//</span>www<span class="m">.</span>markdownguide<span class="m">.</span>org<span class="o">/</span>getting<span class="o">-</span>started<span class="o">/</span>) markdown
 </pre></div>
 </div>
+<p>Lists (Numbered):</p>
+<ol class="arabic simple">
+<li><p>First</p></li>
+<li><p>Second</p></li>
+<li><p>Etc..</p></li>
+</ol>
+<div class="highlight-stata notranslate"><div class="highlight"><pre><span></span>Lists (Numbered):
+<span class="m">1</span>. First
+<span class="m">2</span>. Second
+<span class="m">3</span>. Etc..
+</pre></div>
+</div>
+<p>Lists:</p>
+<ol class="arabic">
+<li><p>First</p>
+<ul class="simple">
+<li><p>indent</p>
+<ul>
+<li><p>further indent</p></li>
+<li><p>like this</p></li>
+<li><p>if you have more</p></li>
+<li><p>to say under indent</p></li>
+</ul>
+</li>
+<li><p>usually</p></li>
+<li><p>three or four spaces</p></li>
+</ul>
+</li>
+<li><p>Second</p>
+<ul class="simple">
+<li><p>beyond four</p></li>
+<li><p>it may appear</p></li>
+<li><p>as a code-block</p></li>
+</ul>
+</li>
+<li><p>Etc..</p>
+<ul class="simple">
+<li><p>anyways</p></li>
+<li><p>you’ll learn</p></li>
+<li><p>with practice</p></li>
+</ul>
+<div class="highlight-stata notranslate"><div class="highlight"><pre><span></span>Lists:
+</pre></div>
+</div>
+</li>
+<li><p>First</p>
+<ul class="simple">
+<li><p>indent</p>
+<ul>
+<li><p>further indent</p></li>
+<li><p>like this</p></li>
+<li><p>if you have more</p></li>
+<li><p>to say under indent</p></li>
+</ul>
+</li>
+<li><p>usually</p></li>
+<li><p>three or four spaces</p></li>
+</ul>
+</li>
+<li><p>Second</p>
+<ul class="simple">
+<li><p>beyond four</p></li>
+<li><p>it may appear</p></li>
+<li><p>as a code-block</p></li>
+</ul>
+</li>
+<li><p>Etc..</p>
+<ul class="simple">
+<li><p>anyways</p></li>
+<li><p>you’ll learn</p></li>
+<li><p>with practice</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</li>
+</ol>
+</section>
 </section>
 </section>
 </section>
@@ -570,7 +660,10 @@ document.write(`
 </li>
 <li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#header">Header</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-header">Sub header</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-sub-header">Sub-sub header</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-sub-header">Sub-sub header</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#sub-sub-sub-header">Sub-sub-sub header</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
