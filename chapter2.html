@@ -362,6 +362,7 @@ document.write(`
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bookdown">bookdown</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#live">live</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hacking">hacking</a></li>
 </ul>
             </nav>
         </div>
@@ -534,6 +535,20 @@ ghp-import -n -p -f _book
 <p><a class="reference external" href="https://sungmin-jhu.github.io/STATA700/intro.html"> Park, Sungmin</a></p>
 <p><span class="xref myst"> Kwon, Sohyeon</span></p>
 </section>
+<section id="hacking">
+<h2>hacking<a class="headerlink" href="#hacking" title="Permalink to this heading">#</a></h2>
+<div class="highlight-stata notranslate"><div class="highlight"><pre><span></span><span class="k">pwd</span>
+jupyter<span class="o">-</span>book build<span class="k"> open</span>
+<span class="k">cd open</span><span class="o">/</span>_build<span class="o">/</span>html
+mv <span class="s">&quot;pwd.nhanes.html&quot;</span> chapter4<span class="m">.</span>html
+<span class="k">cd</span> ..<span class="o">/</span>..<span class="o">/</span>science
+git add .<span class="cm">/*</span>
+<span class="cm">git commit -m &quot;my first hack!&quot;</span>
+<span class="cm">git push</span>
+<span class="cm">ghp-import -n -p -f _build/html</span>
+</pre></div>
+</div>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -605,6 +620,7 @@ ghp-import -n -p -f _book
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bookdown">bookdown</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#live">live</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hacking">hacking</a></li>
 </ul>
   </nav></div>
 
