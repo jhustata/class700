@@ -528,7 +528,7 @@ ghp-import -n -p -f _book
 <p><a class="reference external" href="https://xueerzhang9999.github.io/stata700/intro.html">Zhang, Xueer</a></p>
 <p><a class="reference external" href="https://junming12.github.io/book700">Gong, Junming</a></p>
 <p><a class="reference external" href="https://mjin19.github.io/AdvStata/intro.html">Jin, Mu</a></p>
-<p><a class="reference external" href="https://pdona17.github.io/project_stata/"> Donahue, Patrick</a></p>
+<p><a class="reference external" href="https://pdona17.github.io/class700/intro.html">Donahue, Patrick</a></p>
 <p><a class="reference external" href="https://wgomez1.github.io/myrepo/">Gomez, Wilson</a></p>
 <p><a class="reference external" href="https://waldhaleei.github.io/science/intro.html"> Aldhaleei, Wafa</a></p>
 <p><span class="xref myst">Yue, Yiwei</span></p>
@@ -537,13 +537,12 @@ ghp-import -n -p -f _book
 </section>
 <section id="hacking">
 <h2>hacking<a class="headerlink" href="#hacking" title="Permalink to this heading">#</a></h2>
-<div class="highlight-stata notranslate"><div class="highlight"><pre><span></span><span class="k">pwd</span>
-jupyter<span class="o">-</span>book build<span class="k"> open</span>
-<span class="k">cd open</span><span class="o">/</span>_build<span class="o">/</span>html
-mv <span class="s">&quot;pwd/nhanes.html&quot;</span> chapter4<span class="m">.</span>html
-<span class="k">cd</span> ..<span class="o">/</span>..<span class="o">/</span>science
-git add .<span class="cm">/*</span>
-<span class="cm">git commit -m &quot;my first hack!&quot;</span>
+<div class="highlight-stata notranslate"><div class="highlight"><pre><span></span>jupyter<span class="o">-</span>book build<span class="k"> open</span>
+cp <span class="o">-</span>r<span class="k"> open</span><span class="cm">/* science</span>
+<span class="cm">cd science</span>
+<span class="cm">mv nhanes.html _build/html/chapter4.html</span>
+<span class="cm">git add ./*</span>
+<span class="cm">git commit -m &quot;my first hack, take3!&quot;</span>
 <span class="cm">git push</span>
 <span class="cm">ghp-import -n -p -f _build/html</span>
 </pre></div>
