@@ -2,7 +2,7 @@
 
 Class [zoom](https://jhjhm.zoom.us/j/98823052701) link
 
-Python has got [Jupyter-book](https://jupyterbook.org/en/stable/intro.html), R as got [Bookdown](https://www.youtube.com/watch?v=9i0ElncHGRg), and Stata has got... what exactly?
+Python has got [Jupyter-book](https://jupyterbook.org/en/stable/intro.html), R as got [Quarto-book](https://www.youtube.com/watch?v=9i0ElncHGRg), and Stata has got... what exactly?
 
 Stata admitted to Jason, your outstanding TA, at last years' annual conference held in D.C. that they did not **yet** have the [full suite](https://en.wikipedia.org/wiki/Software_suite) of collaborative tools for `reproducibility` as seen with Jupyter notebooks for Python and RStudio/Quarto for R.
 
