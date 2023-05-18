@@ -381,10 +381,29 @@ document.write(`
 <p>Please use the discussion forum to communicate amongst each other and with your teaching team including Jason and I, but also including Vincent and Johnathan from the 340.600 class. You may use platforms beyond these for the efficiency of your team, including Microsoft teams, Slack, etc.</p>
 <p>My personal choice for a Terminal is <a class="reference external" href="https://code.visualstudio.com/download">VS Code</a>. Jason’s is <a class="reference external" href="https://posit.co">RStudio</a>. One may successfully use the Macs in-built Terminal (I designed this book using it) but you’ll miss out on fancy extension-packages by 3rd parties (which you may add at a later time).</p>
 <p>Feel free to watch the vides we’ve shared. But if you’re impatient, just follow these steps and your book will be live in less than 5 minutes. You may then edit its contents:</p>
-<p><strong>Setup</strong></p>
+<p><code class="docutils literal notranslate"><span class="pre">New!!!</span></code></p>
+<p>Older &amp; wiser, I now <strong>very</strong> strongly recommend Jupyterlab for everyone since it involves an identical setup process for both MacOSX &amp; Windows. Ok to continue using whatever worked for you. But if you were to get a new computer or to help someone else setup for self-publishing, Jupyterlab is the path of least pain:</p>
 <ol class="arabic simple">
+<li><p>download python from a browswer &amp; install it. Then use any terminal (e.g. RStudio terminal) to do the following:</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="o">-</span><span class="n">U</span> <span class="n">jupyter</span><span class="o">-</span><span class="n">book</span>
+<span class="n">pip</span> <span class="n">install</span> <span class="n">jupyterlab</span>
+<span class="n">jupyter</span> <span class="n">lab</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>The last command will open up a window in jupyterlab. Select terminal then:</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">ghp</span><span class="o">-</span><span class="kn">import</span> 
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li><p>Once you’re done then you can proceed to create your book</p></li>
+</ol>
+<p><strong>Setup</strong></p>
+<ol class="arabic simple" start="4">
 <li><p><strong>github</strong> -&gt; create a new public repo</p></li>
-<li><p><strong>terminal</strong>:</p></li>
+<li><p><strong>terminal (jupyterlab)</strong>:</p></li>
 </ol>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>   $ jupyter-book create gitname
    $ git clone https://github.com/book
@@ -531,7 +550,7 @@ ghp-import -n -p -f _book
 <p><a class="reference external" href="https://pdona17.github.io/class700/intro.html">Donahue, Patrick</a></p>
 <p><a class="reference external" href="https://wgomez1.github.io/myrepo/">Gomez, Wilson</a></p>
 <p><a class="reference external" href="https://waldhaleei.github.io/science/intro.html"> Aldhaleei, Wafa</a></p>
-<p><span class="xref myst">Yue, Yiwei</span></p>
+<p><a class="reference external" href="https://yiweiyue.github.io/science/intro.html">Yue, Yiwei</a></p>
 <p><a class="reference external" href="https://sungmin-jhu.github.io/STATA700/intro.html"> Park, Sungmin</a></p>
 <p><a class="reference external" href="https://sohyeonnnnn.github.io/science.github.io/intro.html"> Kwon, Sohyeon</a></p>
 </section>
